@@ -16,6 +16,9 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "trader-server": "bin/trader-server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/garethdown44/trader-server.git"
