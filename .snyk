@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-10-14T21:23:45.030Z'
+  'npm:hawk:20160119':
+    - marketmuster > request > hawk:
+        patched: '2017-10-14T21:23:45.030Z'
+  'npm:ms:20170412':
+    - socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-10-14T21:23:45.030Z'
+  'npm:qs:20140806-1':
+    - marketmuster > request > qs:
+        patched: '2017-10-14T21:23:45.030Z'
+  'npm:request:20160119':
+    - marketmuster > request:
+        patched: '2017-10-14T21:23:45.030Z'
