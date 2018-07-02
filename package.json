@@ -9,12 +9,15 @@
     "express": "^4.13.3",
     "marketmuster": "^0.2.0",
     "rx": "^4.0.0",
-    "socket.io": "^1.3.7"
+    "socket.io": "^1.3.7",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "trader-server": "bin/trader-server"
@@ -28,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/garethdown44/trader-server/issues"
   },
-  "homepage": "https://github.com/garethdown44/trader-server#readme"
+  "homepage": "https://github.com/garethdown44/trader-server#readme",
+  "snyk": true
 }
